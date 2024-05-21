@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaviareň</title>
+    <style>
+        main {
+            width: 200px;
+            padding: 20px;
+            margin: 0 auto;
+            }
+
+        header, footer {
+            background-color: grey;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        .footer {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        .footer a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .steps-list li {
+            font-weight: bold;
+        }
+        .steps-list p {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online kaviareň</h1>
+    </header>
+    <main>
+        <form action="/action_page.php">
+            <label for="coffe">Vyberte typ kávy</label><br>
+            <select name="coffe" id="coffe">
+                <option value="espresso">espresso</option>
+                <option value="doppio">doppio</option>
+                <option value="flat white">flat white</option>
+            </select>
+            <br><br>
+
+            <label for="pocet">Počet:</label><br>
+            <input type="text" id="pocet" name="pocet"><br><br>
+            <fieldset>
+                <legend>Snacky:</legend>
+            <input type="checkbox" id="kolac" name="kolac" value="kolac">
+            <label for="kolac">Koláč</label>
+            <input type="checkbox" id="croissant" name="croissant" value="croissant">
+            <label for="croissant">Croissant</label><br>
+            </fieldset>
+                <br>
+
+            <label for="fname">Meno a Priezvisko:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">E-mail:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fname">Adresa:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+
+            <div class="note-space"></div>
+
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" high="50px"></textarea><br>
+
+        <input type="submit" value="Submit"></br>
+        </form>
+    </main>
+    <footer class="footer">
+        &copy; 20.5.2024 Miloš Madro. Všetky práva vyhradené. | <a href="https://www.recepty.sk/" target="_blank">Dalšie zaujímavé recepty</a>
+    </footer>
+</body>
+</html>
